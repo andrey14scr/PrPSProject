@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using PrPS.DAL.Core;
+using PrPS.DAL.Core.Entities;
 
 namespace PrPS
 {
@@ -29,11 +34,10 @@ namespace PrPS
 
             SignInWindow signin = new SignInWindow();
             var result = signin.ShowDialog();
-            if (result == null || !result)
+            if (result == null || !result.Value)
             {
-
+                Close();
             }
-
         }
     }
 }

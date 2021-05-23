@@ -10,4 +10,5 @@
     <system:String x:Key="SignIn">Sign in</system:String>
     <system:String x:Key="ToSignIn">Sign in</system:String>
     <system:String x:Key="Welcome">Welcome</system:String>
+    <system:String x:Key="IncorrectData">Incorrect data(login or password)</system:String>
 </ResourceDictionary>

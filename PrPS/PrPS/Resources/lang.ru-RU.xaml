@@ -10,4 +10,5 @@
     <system:String x:Key="SignIn">Вход в систему</system:String>
     <system:String x:Key="ToSignIn">Войти</system:String>
     <system:String x:Key="Welcome">Добро пожаловать</system:String>
+    <system:String x:Key="IncorrectData">Неправильные данные(логин или пароль)</system:String>
 </ResourceDictionary>

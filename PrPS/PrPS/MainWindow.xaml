@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrPS"
         mc:Ignorable="d"
-        Title="{DynamicResource Title}" Height="400" Width="600">
+        Title="{DynamicResource Title}" Height="400" Width="600" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFEDF7FF">
         <Menu Height="22" VerticalAlignment="Top" Background="{x:Null}" Padding="0,2,0,0">
             <MenuItem Header="File">
