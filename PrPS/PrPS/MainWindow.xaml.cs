@@ -18,6 +18,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using PrPS.DAL.Core;
 using PrPS.DAL.Core.Entities;
+using PrPS.Dtos;
 
 namespace PrPS
 {
@@ -26,18 +27,56 @@ namespace PrPS
     /// </summary>
     public partial class MainWindow : Window
     {
+        private UserDto _currentAccount;
+
         public MainWindow()
         {
             InitializeComponent();
 
             App.Language = new CultureInfo("ru-RU");
 
+            using (PrPsContext db = new PrPsContext())
+            {
+                var user = db.Users.FirstOrDefault(u => u.Login == Properties.Settings.Default.Account);
+                if (user is not null)
+                {
+                    _currentAccount = new UserDto()
+                    {
+                        Id = user.Id,
+                        Name = user.Name,
+                        Login = user.Login,
+                        Role = user.Role
+                    };
+                }
+            }
+
+            if (_currentAccount is null)
+            {
+                LoginForm();
+            }
+        }
+
+        private void miAccExit_Click(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.Account = string.Empty;
+            Properties.Settings.Default.Save();
+
+            LoginForm();
+        }
+
+        private void LoginForm()
+        {
             SignInWindow signin = new SignInWindow();
             var result = signin.ShowDialog();
             if (result == null || !result.Value)
             {
                 Close();
             }
+        }
+
+        private void miExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

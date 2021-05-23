@@ -8,19 +8,20 @@
         Title="{DynamicResource Title}" Height="400" Width="600" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFEDF7FF">
         <Menu Height="22" VerticalAlignment="Top" Background="{x:Null}" Padding="0,2,0,0">
-            <MenuItem Header="File">
-                <MenuItem Header="New Project" ></MenuItem>
-                <MenuItem Header="Open Project" >
-                    <MenuItem Header="WinForms"></MenuItem>
-                    <MenuItem Header="WPF" ></MenuItem>
-                </MenuItem>
+            <MenuItem Header="{DynamicResource File}">
+                <MenuItem Header="New Project"></MenuItem>
+                <MenuItem Header="Open Project"></MenuItem>
                 <Separator />
-                <MenuItem Header="Exit" ></MenuItem>
+                <MenuItem x:Name="miExit" Header="{DynamicResource Exit}" Click="miExit_Click" ></MenuItem>
             </MenuItem>
-            <MenuItem Header="Edit" ></MenuItem>
-            <MenuItem Header="View" ></MenuItem>
+            <MenuItem Header="{DynamicResource Edit}">
+                <MenuItem Header="{DynamicResource Account}">
+                    <MenuItem x:Name="miAccExit" Header="{DynamicResource Exit}" Click="miAccExit_Click"></MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="{DynamicResource View}" ></MenuItem>
         </Menu>
-        <Frame x:Name="Fraim" Background="Azure" Margin="0,27,0,0"/>
+        <Frame x:Name="Fraim" Background="Azure" Margin="0,25,0,0"/>
 
     </Grid>
 </Window>

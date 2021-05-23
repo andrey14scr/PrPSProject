@@ -6,9 +6,20 @@
     <system:String x:Key="Login">Логин</system:String>
     <system:String x:Key="Password">Пароль</system:String>
     <system:String x:Key="DontHaveAccount">Нет аккаунта?</system:String>
+    <system:String x:Key="AlreadyHaveAccount">Уже есть аккаунт?</system:String>
     <system:String x:Key="Register">Регистрация</system:String>
     <system:String x:Key="SignIn">Вход в систему</system:String>
     <system:String x:Key="ToSignIn">Войти</system:String>
     <system:String x:Key="Welcome">Добро пожаловать</system:String>
     <system:String x:Key="IncorrectData">Неправильные данные(логин или пароль)</system:String>
+    <system:String x:Key="ConfirmPassword">Подтвердить пароль</system:String>
+    <system:String x:Key="AccExist">Аккаунт с тким логином уже существует!</system:String>
+    <system:String x:Key="CheckPasswords">Пароль не подтвержден!</system:String>
+
+    <system:String x:Key="Account">Аккаунт</system:String>
+
+    <system:String x:Key="File">Файл</system:String>
+    <system:String x:Key="Edit">Редактировать</system:String>
+    <system:String x:Key="View">Просмотр</system:String>
+    <system:String x:Key="Exit">Выход</system:String>
 </ResourceDictionary>

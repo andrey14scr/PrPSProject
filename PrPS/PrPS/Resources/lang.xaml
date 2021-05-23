@@ -6,9 +6,20 @@
     <system:String x:Key="Login">Login</system:String>
     <system:String x:Key="Password">Password</system:String>
     <system:String x:Key="DontHaveAccount">Don't have account?</system:String>
+    <system:String x:Key="AlreadyHaveAccount">Already have account?</system:String>
     <system:String x:Key="Register">Register</system:String>
     <system:String x:Key="SignIn">Sign in</system:String>
     <system:String x:Key="ToSignIn">Sign in</system:String>
     <system:String x:Key="Welcome">Welcome</system:String>
     <system:String x:Key="IncorrectData">Incorrect data(login or password)</system:String>
+    <system:String x:Key="ConfirmPassword">Confirm password</system:String>
+    <system:String x:Key="AccExist">Account with such login already exists!</system:String>
+    <system:String x:Key="CheckPasswords">Password is not confirmed!</system:String>
+
+    <system:String x:Key="Account">Account</system:String>
+
+    <system:String x:Key="File">File</system:String>
+    <system:String x:Key="Edit">Edit</system:String>
+    <system:String x:Key="View">View</system:String>
+    <system:String x:Key="Exit">Exit</system:String>
 </ResourceDictionary>

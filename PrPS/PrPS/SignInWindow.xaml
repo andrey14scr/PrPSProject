@@ -6,17 +6,17 @@
         xmlns:local="clr-namespace:PrPS"
         mc:Ignorable="d"
         Title="SignInWindow" Height="350" Width="400" WindowStartupLocation="CenterScreen" MinHeight="350" MinWidth="400" Closing="Window_Closing">
-    <Grid>
+    <Grid x:Name="grMain">
         <Label Content="{DynamicResource Welcome}" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="50" Width="318" FontSize="28" HorizontalContentAlignment="Center" Padding="5,5,5,1"/>
 
         <Label x:Name="lblLogin" Content="{DynamicResource Login}" Margin="0,80,0,0" VerticalAlignment="Top" FontSize="14" Padding="1,5,5,5" HorizontalAlignment="Center" Width="166"/>
         <Label x:Name="lblPassword" Content="{DynamicResource Password}" HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" FontSize="14" Width="166" Padding="1,5,5,5"/>
         <TextBox x:Name="tbLogin" HorizontalAlignment="Center" Margin="0,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="14" Height="22"/>
 
-        <Label Content="{DynamicResource DontHaveAccount}" HorizontalAlignment="Center" Margin="0,254,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Left" Padding="1,5,5,1" FontSize="14"/>
+        <Label x:Name="lblQuestion" Content="{DynamicResource DontHaveAccount}" HorizontalAlignment="Center" Margin="0,254,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Left" Padding="1,5,5,1" FontSize="14"/>
 
-        <Label x:Name="lblRegister" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Left" Padding="1,1,5,1" FontSize="14" Foreground="#FF051AFF">
-            <TextBlock x:Name="tblRegister" Text="{DynamicResource Register}" Width="108" HorizontalAlignment="Left" MouseEnter="tblRegister_MouseEnter" MouseLeave="tblRegister_MouseLeave" MouseUp="tblRegister_MouseUp"/>
+        <Label x:Name="lblLogReg" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Width="144" HorizontalContentAlignment="Left" Padding="1,1,5,1" FontSize="14" Foreground="#FF051AFF">
+            <TextBlock x:Name="tblLogReg" Text="{DynamicResource Register}" HorizontalAlignment="Left" MouseEnter="tblRegister_MouseEnter" MouseLeave="tblRegister_MouseLeave" MouseUp="tblRegister_MouseUp"/>
         </Label>
         <Button x:Name="btnConfirm" Content="{DynamicResource ToSignIn}" HorizontalAlignment="Center" Margin="0,204,0,0" VerticalAlignment="Top" Width="90" FontSize="14" Height="25" Click="btnConfirm_Click"/>
         <PasswordBox x:Name="pbPassword" HorizontalAlignment="Center" Margin="0,167,0,0" VerticalAlignment="Top" Width="166" Height="22"/>
