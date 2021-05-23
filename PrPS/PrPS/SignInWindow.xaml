@@ -1,0 +1,24 @@
+﻿<Window x:Class="PrPS.SignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrPS"
+        mc:Ignorable="d"
+        Title="SignInWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="{DynamicResource Welcome}" HorizontalAlignment="Center" Margin="0,38,0,0" VerticalAlignment="Top" Height="50" Width="318" FontSize="28" HorizontalContentAlignment="Center" Padding="5,5,5,1"/>
+
+        <Label x:Name="lblLogin" Content="{DynamicResource Login}" HorizontalAlignment="Left" Margin="217,112,0,0" VerticalAlignment="Top" FontSize="14" Width="79"/>
+        <Label x:Name="lblPassword" Content="{DynamicResource Password}" HorizontalAlignment="Left" Margin="217,170,0,0" VerticalAlignment="Top" FontSize="14" Width="79"/>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="14" Height="22"/>
+        <TextBox x:Name="tbPassword" HorizontalAlignment="Center" Margin="0,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="14" Height="22"/>
+
+        <Label Content="{DynamicResource DontHaveAccount}" HorizontalAlignment="Left" Margin="180,292,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Left" Padding="1,5,5,1" FontSize="14"/>
+
+        <Label x:Name="lblRegister" HorizontalAlignment="Left" Margin="330,296,0,0" VerticalAlignment="Top" Width="122" HorizontalContentAlignment="Left" Padding="5,1,5,1" FontSize="14" Foreground="#FF051AFF">
+            <TextBlock x:Name="tblRegister" Text="{DynamicResource Register}" Width="108" HorizontalAlignment="Left" MouseEnter="tblRegister_MouseEnter" MouseLeave="tblRegister_MouseLeave" MouseUp="tblRegister_MouseUp"/>
+        </Label>
+        <Button x:Name="btnConfirm" Content="{DynamicResource ToSignIn}" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" Width="90" FontSize="14" Height="25" Click="btnConfirm_Click"/>
+    </Grid>
+</Window>

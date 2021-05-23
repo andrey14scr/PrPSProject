@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+
+    <system:String x:Key="Title">Электронный реестр помещений</system:String>
+    <system:String x:Key="Login">Логин</system:String>
+    <system:String x:Key="Password">Пароль</system:String>
+    <system:String x:Key="DontHaveAccount">Нет аккаунта?</system:String>
+    <system:String x:Key="Register">Регистрация</system:String>
+    <system:String x:Key="SignIn">Вход в систему</system:String>
+    <system:String x:Key="ToSignIn">Войти</system:String>
+    <system:String x:Key="Welcome">Добро пожаловать</system:String>
+</ResourceDictionary>

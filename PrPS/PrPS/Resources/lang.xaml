@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+
+    <system:String x:Key="Title">Digital registry of rooms</system:String>
+    <system:String x:Key="Login">Login</system:String>
+    <system:String x:Key="Password">Password</system:String>
+    <system:String x:Key="DontHaveAccount">Don't have account?</system:String>
+    <system:String x:Key="Register">Register</system:String>
+    <system:String x:Key="SignIn">Sign in</system:String>
+    <system:String x:Key="ToSignIn">Sign in</system:String>
+    <system:String x:Key="Welcome">Welcome</system:String>
+</ResourceDictionary>
